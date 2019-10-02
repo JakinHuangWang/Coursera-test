@@ -1,0 +1,2 @@
+1. man -k [the command]
+2. find /  \( -name "*.sh" -o  -name "*.mv" \)

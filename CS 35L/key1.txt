@@ -1,0 +1,33 @@
+Exercise 1.1:
+C-s html C-r html
+C-s scavenger C-r scavenger
+C-s self-referential C-r self-referential
+C-s arrow C-r arrow
+C-e
+C-a
+
+Exercise 1.2:
+C-u 18 C-n C-k
+C-s DELETE-ME C-a C-k
+M-> C-r https://en.wikipedia.org/wiki/HTML_comment#Comments C-s --> C-SP C-r <!-- C-SP C-k
+C-s <!-- C-r < C-SP C-s --> C-SP C-k
+C-s <!-- C-r < C-SP C-s	--> C-SP C-k
+C-s <!-- C-r < C-SP C-s	--> C-SP C-k
+
+Exercise 1.3: 
+M-% Assignment 1 -> Assignment 42 SP SP C-g
+M-< M-% UTF-8 -> US-ASCII SP C-g
+M-< M-x replace-regexp <RET> [^[:ascii:]] <RET>
+M-< C-s </ol> <RET>
+
+Exercise 1.4:
+M-> C-u 45 C-p C-SP C-s -->  M-w M-< C-u 18 C-n C-y
+M-> C-u 36 C-p C-SP C-s -->  M-w M-< C-u 128 C-n C-y
+M-> C-u	27 C-p C-SP C-s -->  M-w M-< C-u 368 C-n C-y
+M-> C-u	16 C-p C-s <! C-r <  C-SP C-s >  M-w M-< C-u 414 C-n C-s . C-y
+M-> C-u 15 C-p C-s < C-r < C-SP C-s --> M-w M-< C-u 415 C-n C-y
+M-> C-u 2 C-p C-s < C-r < C-SP C-s --> M-w M-< C-u 436 C-n C-y
+C-u 51 C-p C-SP M->51 C-w
+C-x C-s
+M->  --> C-u 51 C-p <!--
+M-< M-x replace-string <ol> -> <oL> : 7 occurrences 
